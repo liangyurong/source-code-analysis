@@ -8,9 +8,17 @@
 
 ```java
 public V put(K key, V value) {
-	// hash(key) : 计算出在数组的下标索引
+	// hash(key) : 计算hash值，并不是计算出在数组的下标索引
     return putVal(hash(key), key, value, false, true);
 }
+```
+
+
+
+计算数组索引下标
+
+```
+hash &(n-1)
 ```
 
 
